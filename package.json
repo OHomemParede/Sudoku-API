@@ -1,0 +1,13 @@
+{
+    "name": "sudoku-api",
+    "version": "0.0.0",
+    "main": "src/index.ts",
+    "repository": "https://github.com/MatheusIshiyama/Sudoku-API.git",
+    "author": "Matheus Ishiyama <semrumo3@hotmail.com> & Daniel de Souza Lima <Dewaldman@Outlook.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "ts-node-dev": "^1.1.6",
+        "typescript": "^4.2.4"
+    }
+}
