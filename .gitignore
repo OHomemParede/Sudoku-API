@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+#python bytecode-compiled
+__pycache__
+
