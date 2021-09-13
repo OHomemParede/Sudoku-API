@@ -1,1 +1,1 @@
-# Sudoku-API
+# Sudoku api
