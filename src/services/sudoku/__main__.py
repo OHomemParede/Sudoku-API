@@ -1,4 +1,4 @@
-from sudoku import Sudoku
+from Sudoku import Sudoku
 import sys
 from time import time
 
@@ -13,14 +13,14 @@ columns_length = 9
 
 def main(argv):
     if len(argv) != 2:
-        print(f"\nSyntax Erro: \n   {argv[0]} [difficulty]\n\n   [difficulty] must be an integer | 0<=[difficulty]<= 81\n")
+        print(f"\nSyntax Error: \n   {argv[0]} [difficulty]\n\n   [difficulty] must be an integer | 0<=[difficulty]<= 81\n")
         return EXIT_FAILURE
     try:
         difficulty = int(argv[1])
         if not 0<=difficulty<=81:
             raise Exception
     except:
-        print(f"\nParameter Erro: \n   {argv[0]} [difficulty] \n\n   [difficulty] must be an integer | 0<=[difficulty]<= 81\n")
+        print(f"\nParameter Error: \n   {argv[0]} [difficulty] \n\n   [difficulty] must be an integer | 0<=[difficulty]<= 81\n")
         return EXIT_FAILURE
 
 
