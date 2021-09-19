@@ -1,13 +1,27 @@
 {
     "name": "sudoku-api",
     "version": "0.0.0",
-    "main": "src/index.ts",
     "repository": "https://github.com/MatheusIshiyama/Sudoku-API.git",
-    "author": "Matheus Ishiyama <semrumo3@hotmail.com> & Daniel de Souza Lima <Dewaldman@Outlook.com>",
+    "author": "Matheus Ishiyama <semrumo3@hotmail.com> & Daniel de Souza Lima Junior <Dewaldman@Outlook.com>",
     "license": "MIT",
-    "dependencies": {},
+    "scripts": {
+        "start": "node dist/server.js",
+        "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
+        "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1"
+    },
     "devDependencies": {
-        "ts-node-dev": "^1.1.6",
-        "typescript": "^4.2.4"
+        "@types/express": "^4.17.13",
+        "@types/jsonwebtoken": "^8.5.5",
+        "ts-node-dev": "^1.1.8",
+        "tsconfig-paths": "^3.11.0",
+        "tscpaths": "^0.0.9",
+        "typescript": "^4.4.3"
+    },
+    "engines": {
+        "node": ">=14.17.4"
     }
 }
