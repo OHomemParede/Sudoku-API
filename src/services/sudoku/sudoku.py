@@ -48,8 +48,8 @@ class Sudoku:
                     invalid_column_numbers(self.original_matrix, column, self.columns_length),
                     invalid_box_numbers(self.original_matrix, (column, row))
                 )
+                
                 # valid_number == 0 means that there is no valid number at all, so return False
-
                 if valid_number == 0:
                     return False
 
@@ -60,10 +60,10 @@ class Sudoku:
     def matrix_format(self) -> dict:
         # Return Sudoku info as a JSON format 
         out = {
-            'generator_time': self.generator_time,
-            'rows_length': self.rows_length,
-            'columns_length': self.columns_length,
-            'original_matrix': self.original_matrix,
-            'game_matrix': self.game_matrix,
+            "generator_time": self.generator_time,
+            "rows_length": self.rows_length,
+            "columns_length": self.columns_length,
+            "original_matrix": self.original_matrix,
+            "game_matrix": self.game_matrix,
         }
         return out
