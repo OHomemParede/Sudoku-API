@@ -1,7 +1,7 @@
-from valid_Numbers import invalid_row_numbers
-from valid_Numbers import invalid_column_numbers
-from valid_Numbers import invalid_box_numbers
-from valid_Numbers import valid_random_number
+from valid_numbers import invalid_row_numbers
+from valid_numbers import invalid_column_numbers
+from valid_numbers import invalid_box_numbers
+from valid_numbers import valid_random_number
 from difficulties import random_points
 import copy
 

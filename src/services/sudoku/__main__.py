@@ -1,4 +1,4 @@
-from Sudoku import Sudoku
+from sudoku import Sudoku
 import sys
 from time import time
 
