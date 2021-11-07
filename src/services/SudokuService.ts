@@ -6,7 +6,8 @@ const sudokuPath = path.join(__dirname, "../../src/services/sudoku");
 
 class SudokuService {
     generateSudoku(difficulty: string, res: Response): void {
-        const sudokuProcess = spawn("python", [sudokuPath, difficulty]);
+
+        const sudokuProcess = spawn("python3", [sudokuPath, difficulty]);
 
         sudokuProcess.stdout.on("data", (data: Buffer) => {
             let sudokuText: string = data.toString();

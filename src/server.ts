@@ -22,7 +22,7 @@ class Server {
             });
 
             this.app.listen(this.port, () => {
-                console.info(`Listening at http://localhost:${this.port}`);
+                console.info(`Listening at ${this.port}`);
             });
 
         } catch (error) {
