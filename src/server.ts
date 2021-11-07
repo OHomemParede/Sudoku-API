@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import { router } from "./routes"
 import dotenv from "dotenv";
+import cors from 'cors'
 dotenv.config();
 
 
@@ -16,6 +17,7 @@ class Server {
 
     init() {
         try {
+            this.app.use(cors());
             this.app.use("/api", router);
             this.app.use((req: Request, res: Response) => {
                 res.status(400).json({ error: "Unknown URL" });
