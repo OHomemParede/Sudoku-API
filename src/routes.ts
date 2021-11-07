@@ -5,6 +5,6 @@ const router: Router = Router();
 
 router
     .route("/sudoku/:difficulty")
-    .post(SudokuController.generateSudoku);
+    .get(SudokuController.generateSudoku);
 
 export { router }; 
